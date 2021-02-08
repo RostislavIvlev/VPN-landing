@@ -1,0 +1,34 @@
+.cards-wrapper
+  .card
+    img(src="/assets/images/box-free.svg", alt="")
+    .card__name Free Plan
+    ul.card-list
+      each item in ["Unlimited Bandwitch", "Encrypted connection", "No Traffic Logs", "Works on All Devices"]
+        .card-list__row
+          .card-list__bullet done
+          li.card-list__item= item
+    .card__cost Free 
+    .card__btn
+      +button("Select", "#", "border, card")
+  .card
+    img(src="/assets/images/box-free.svg", alt="")
+    .card__name Free Plan
+    ul.card-list
+      each item in ["Unlimited Bandwitch", "Encrypted connection", "No Traffic Logs", "Works on All Devices", "Connect Anyware"]
+        .card-list__row
+          .card-list__bullet done
+          li.card-list__item= item
+    .card__cost $9/month
+    .card__btn
+      +button("Select", "#", "border, card")
+  .card.card_active
+    img(src="/assets/images/box-free.svg", alt="")
+    .card__name Free Plan
+    ul.card-list
+      each item in ["Unlimited Bandwitch", "Encrypted connection", "No Traffic Logs", "Works on All Devices", "Connect Anyware", "Get New Features"]
+        .card-list__row
+          .card-list__bullet done
+          li.card-list__item= item
+    .card__cost $12/month
+    .card__btn
+      +button("Select", "#", "filled, card")

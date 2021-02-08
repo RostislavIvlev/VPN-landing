@@ -1,0 +1,27 @@
+.footer
+  .footer-col
+    include ../../blocks/logo/logo
+    .footer-col__text LaslesVPN is a private virtual network that has unique features and has high security.
+    .footer-col__socials.socials
+      .socials__el 
+      .socials__el 
+      .socials__el 
+    .footer-col__text.footer-col__text_copyright ©2020LaslesVPN
+  .footer-col
+    .footer-col__title Product
+    ul.footer-col__list
+      each item in ["Download", "Pricing", "Locations", "Server", "Countries", "Blog"]
+        li
+          a.footer-col__item(href="#")= item
+  .footer-col
+    .footer-col__title Engage
+    ul.footer-col__list
+      each item in ["LaslesVPN ?", "FAQ", "Tutorials", "About Us", "Privacy Policy", "Terms"]
+        li
+          a.footer-col__item(href="#")= item
+  .footer-col
+    .footer-col__title Earn Money
+    ul.footer-col__list
+      each item in ["Affiliate", "Become Partner"]
+        li
+          a.footer-col__item(href="#")= item

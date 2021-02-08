@@ -1,0 +1,41 @@
+@import "../../scss/main.scss";
+
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: $black;
+    text-align: center;
+    box-sizing: border-box;
+
+    &_border {
+        color: $red;
+        border: 2px solid $red;
+    }
+    
+    &_filled {
+        background-color: $red;
+        color: #fff;
+    }
+
+    &_header {
+        width: 150px;
+        height: 45px;
+        line-height: 41px;
+        border-radius: 50px;
+    }
+
+    &_big {
+        width: 250px;
+        height: 60px;
+        line-height: 56px;
+        border-radius: 10px;
+    }
+
+    &_card {
+        width: 178px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 50px;
+    }
+}

@@ -1,0 +1,72 @@
+@import "../../scss/main.scss";
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-col {
+    font-weight: 400;
+    font-size: 16px;
+    color: $darkgray;
+    line-height: 30px;
+    text-align: left;
+
+    &__text {
+        margin-top: 15px;
+
+        &_copyright {
+            color: $lightgray;
+        }
+    }
+
+    &__socials {
+        margin-top: 15px;
+    }
+
+    &__title {
+        font-weight: 500;
+        color: $black;
+    }
+
+    &__item {
+        color: $darkgray;
+        line-height: 16px;
+        margin-top: 10px;
+
+        &:hover {
+            border-bottom: 1px solid $darkgray;
+        }
+    }
+
+    &:first-child {
+        width: 25%;
+    }
+}
+
+.socials {
+    display: flex;
+
+    &__el {
+        @include fontSettings($awesome, 25px, 33px, $red);
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+        background-color: #fff;
+    }
+}
+
+@media (max-width: 850px) {
+    .footer-col {
+        display: none;
+    }
+
+    .footer-col:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+}

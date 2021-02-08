@@ -1,0 +1,10 @@
+.header
+  include ../../blocks/logo/logo
+  ul.nav
+    each el in ["About", "Features", "Pricing", "Testimonials", "Help"]
+      li.nav__el= el
+  .login-section
+    .login-section_btn
+      +button("Sign In", "#")
+    .login-section_btn
+      +button("Sign Up", "#", "border, header")

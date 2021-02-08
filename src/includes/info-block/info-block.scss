@@ -1,0 +1,33 @@
+@import "../../scss/main.scss";
+
+.info-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+
+    &__col {
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__icon {
+        @include fontSettings($materialIcons, 40px, 55px, $red);
+        width: 55px;
+        height: 55px;
+        background-color: #ffecec;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 850px) {
+    .info-wrapper {
+        display: none;
+    }
+}

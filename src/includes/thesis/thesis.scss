@@ -1,0 +1,77 @@
+@import "../../scss/main.scss";
+
+.thesis-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 85px;
+
+    img {
+        width: 40%;
+    }
+}
+
+.thesis {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 40%;
+
+    &__h2 {
+        font-weight: 500;
+        color: $black;
+        line-height: 50px;
+        font-size: 35px;
+    }
+
+    &__p {
+        font-size: 16px;
+        font-weight: 400;
+        color: $darkgray;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+}
+
+.thesis-list {
+    
+    &__bullet {
+        @include fontSettings($materialIcons, 14px, 20px, #fff);
+        background-color: $green;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        margin-right: 15px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    &__item {
+        font-size: 14px;
+        color: $darkgray;
+    }
+}
+
+@media (max-width: 850px) {
+    .thesis-wrapper {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 80%;
+            margin-bottom: 45px;
+        }
+    }
+
+    .thesis {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}

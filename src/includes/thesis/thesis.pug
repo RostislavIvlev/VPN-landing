@@ -1,0 +1,11 @@
+.thesis-wrapper
+  img(src="/assets/images/img-2.svg", alt="")
+  .thesis
+    h2.thesis__h2 We Provide Many Features You Can Use
+    p.thesis__p You can explore the features that we provide with fun and have their own functions each feature.
+    
+    ul.thesis-list
+      each item in ["Powerfull online protection.", "Internet without borders.", "Supercharged VPN.", "No specific time limits."]
+        .thesis-list__row
+          .thesis-list__bullet done
+          li.thesis-list__item= item
